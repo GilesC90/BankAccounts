@@ -1,0 +1,10 @@
+@using BankAccounts.Models;
+@model Balance;
+
+
+    <form asp-action="total" method="post">
+        <span asp-validation-for="Amount"></span>
+        <label asp-for="Amount"></label>
+        <input asp-for="Amount">
+        <input type="submit" value="Submit">
+    </form>
